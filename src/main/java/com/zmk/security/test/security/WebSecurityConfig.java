@@ -125,7 +125,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         .antMatchers("/adminx**")
             .hasAnyAuthority("ROLE_ADMIN","ROLE_ADMIN1","ROLE_ADMIN2")
 //        .antMatchers("/dynamic**")
-//            .hasAnyAuthority(dynamicAuthorService.getAuthoritiesString())
+//            .hasAnyAuthority(dynamicAuthorService.getAuthoritiesString())// can use => OK
         .antMatchers("/admin**")
             .hasAuthority("ROLE_ADMIN")// admin them tai vi tri theo thu tu nay, neu vi tri khac se overlap voi /admin1** + /admin2**
         .and()

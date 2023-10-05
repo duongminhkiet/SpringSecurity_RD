@@ -91,7 +91,7 @@ public class AppController {
         return "adminx";
     }
     
-    @PreAuthorize("hasAnyAuthority(@authorityService.getAuthoritiesAdmin)")
+    @PreAuthorize("hasAnyAuthority(@authorityService.getAuthoritiesAdmin)")// authorityService in file DynamicAuthorService.java and other exam in WebSecurityConfig.java
 //    @Secured ({"ROLE_ADMIN", "ROLE_ADMIN1"})
 //    @PreAuthorize("hasAnyAuthority('ROLE_ADMIN1','ROLE_ADMIN')")
 //    @PreAuthorize("hasAuthority('ROLE_ADMIN1') or hasAuthority('ROLE_ADMIN')")
